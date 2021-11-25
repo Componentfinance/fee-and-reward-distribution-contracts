@@ -1,0 +1,20 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.3",
+    "hardhat": "^2.5.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+  },
+  "scripts": {
+    "build": "hardhat compile",
+    "build-swaps": "hardhat run --network localhost scripts/build-swaps.js",
+    "test": "npx hardhat test test/distribution.js --network localhost"
+  }
+}
